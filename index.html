@@ -8,11 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <h2>Lista de Tareas</h2>
-        <input type="text" id="taskInput" placeholder="Agregar tarea...">
-        <div class="error" id="error">Por favor, ingresa una tarea.</div>
-        <button id="addTaskButton">Agregar</button>
-        <div class="task-list" id="taskList"></div>
+        <h1>Lista de Tareas</h1>
+        <input type="text" id="taskInput" placeholder="Añadir nueva tarea...">
+        <button id="addTaskButton">Añadir Tarea</button>
+        <p id="errorText" class="error"></p>
+        <ul id="taskList"></ul>
+        <div class="stats">
+            <p>Total de tareas: <span id="totalTasks">0</span></p>
+            <p>Tareas completadas: <span id="completedTasks">0</span></p>
+            <p>Tareas pendientes: <span id="pendingTasks">0</span></p>
+        </div>
     </div>
     <script src="Script/script.js"></script>
 </body>
